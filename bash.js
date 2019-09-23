@@ -1,4 +1,5 @@
 const pwd = require('./pwd');
+const ls = require('./ls');
 
 process.stdout.write('prompt > ');
 
@@ -8,7 +9,7 @@ process.stdin.on('data', (data) => {
   if(cmd === 'pwd') {
     pwd();
   }
-
-  // process.stdout.write('You typed: ' + cmd);
-  // process.stdout.write('\nprompt > ')
+  if(cmd === 'ls') {
+    ls();
+  }
 });

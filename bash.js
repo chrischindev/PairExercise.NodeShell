@@ -13,7 +13,7 @@ process.stdin.on('data', (data) => {
   if(cmd === 'ls') {
     ls();
   }
-  if (cmd.slice(0,2) === 'cat') {
+  if (cmd.slice(0,3) === 'cat') {
     cat(cmd.slice(4));
   }
 });
